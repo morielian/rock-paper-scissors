@@ -3,10 +3,13 @@ function playRound() {
   const playerChoice =  prompt('What is your choice? Rock, Paper, or Scissors')
   if (choice == playerChoice.toLowerCase()) {
     console.log("It's a Draw!")
-  } else {
-    console.log("Else statement")
-
+  } else if((choice == "rock" && playerChoice.toLowerCase() == "scissors") || (choice == "scissors" && playerChoice.toLowerCase() == "paper") || (choice == "paper" && playerChoice.toLowerCase()=="rock")){
+    console.log("Computer wins!")
   }
+
+  else {
+      console.log ("Player wins")
+    }
 }
 
 function computerPlay() {
@@ -15,4 +18,4 @@ function computerPlay() {
 }
 
 
-playRound();
+playRound()
