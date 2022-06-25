@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+.header{
+  text-align: center;
+  color: #200f8c
+}
+ body {
+  background-color: #8c560f;
+ }

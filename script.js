@@ -1,9 +1,10 @@
 function playRound() {
   let choice = computerPlay();
-  const playerChoice =  prompt('What is your choice? Rock, Paper, or Scissors')
+  const playerChoice = document.querySelectorAll('button')
   if (choice == playerChoice.toLowerCase()) {
     console.log("It's a Draw!")
-  } else if((choice == "rock" && playerChoice.toLowerCase() == "scissors") || (choice == "scissors" && playerChoice.toLowerCase() == "paper") || (choice == "paper" && playerChoice.toLowerCase()=="rock")){
+  } else if((choice == "rock" && playerChoice.toLowerCase() == "scissors") || (choice == "scissors" && playerChoice.toLowerCase() == "paper") ||
+   (choice == "paper" && playerChoice.toLowerCase()=="rock")){
     console.log("Computer wins!")
   }
 
